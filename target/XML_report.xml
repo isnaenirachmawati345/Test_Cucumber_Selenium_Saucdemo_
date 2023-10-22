@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="9" time="177.871">
+    <testcase classname="Login functionality" name="Ensure user succesfully login" time="14.986">
+        <system-out><![CDATA[Given user is on SauceDemo homepage.........................................passed
+When user input standard_user as username...................................passed
+And user input secret_sauce as password.....................................passed
+And user click enter........................................................passed
+Then user verify success login result.......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login functionality" name="Ensure user succesfully login 2" time="20.541">
+        <system-out><![CDATA[Given user is on SauceDemo homepage.........................................passed
+When user input performance_glitch_user as username.........................passed
+And user input secret_sauce as password.....................................passed
+And user click enter........................................................passed
+Then user verify success login result.......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login functionality" name="Ensure user succesfully login 3" time="6.086">
+        <system-out><![CDATA[Given user is on SauceDemo homepage.........................................passed
+When user input failed_user as username.....................................passed
+And user input secret_sauce as password.....................................passed
+And user click enter........................................................passed
+Then user verify false login result.........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login functionality" name="Ensure user failed login with wrong username and password" time="12.429">
+        <system-out><![CDATA[Given user is on SauceDemo homepage.........................................passed
+When user input failed_user as username.....................................passed
+And user input secret_sauce as password.....................................passed
+And user click enter........................................................passed
+Then user verify failed login...............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login functionality" name="Ensure user failed login with password null" time="6.713">
+        <system-out><![CDATA[Given user is on SauceDemo homepage.........................................passed
+When user input standard_user as username...................................passed
+And user click enter........................................................passed
+Then user verify failed login...............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login functionality" name="Ensure user succesfully logout" time="6.964">
+        <system-out><![CDATA[Given user is on SauceDemo homepage.........................................passed
+When user input standard_user as username...................................passed
+And user input secret_sauce as password.....................................passed
+And user click enter........................................................passed
+Then user verify success login result.......................................passed
+And user select button menu.................................................passed
+And select button log out...................................................passed
+Then user back to login page................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login functionality" name="Ensure user succesfully click about" time="70.743">
+        <system-out><![CDATA[Given user is on SauceDemo homepage.........................................passed
+When user input standard_user as username...................................passed
+And user input secret_sauce as password.....................................passed
+And user click enter........................................................passed
+Then user verify success login result.......................................passed
+And user click menu.........................................................passed
+And select button about.....................................................passed
+Then user go to page about..................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Product functionality" name="Ensure amount of card incremented when product added to cart" time="26.76">
+        <system-out><![CDATA[Given user is on SauceDemo homepage.........................................passed
+When user input standard_user as username...................................passed
+And user input secret_sauce as password.....................................passed
+And user click enter........................................................passed
+When user add first product to cart.........................................passed
+And user see initial amount.................................................passed
+When user add second product to cart........................................passed
+Then user verify amount of product in cart incremented......................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Product functionality" name="Ensure amount of card incremented when product added to cart 2" time="11.088">
+        <system-out><![CDATA[Given user is on SauceDemo homepage.........................................passed
+When user input standard_user as username...................................passed
+And user input secret_sauce as password.....................................passed
+And user click enter........................................................passed
+When user click products....................................................passed
+And user go to page detail..................................................passed
+And user click button back to products......................................passed
+Then user back to page products.............................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
